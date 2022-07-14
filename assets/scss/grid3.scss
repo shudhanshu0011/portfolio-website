@@ -1,0 +1,177 @@
+.section3{
+    margin-left: -1px;
+    overflow: hidden;
+}
+.dev-title {
+    @media screen and (min-width: 320px) {
+        grid-area: 4 / 1 / 5 / 13;
+    }
+    @media screen and (min-width: 720px) {
+        // grid-area: 3 / 1 / 4 / 5;
+        grid-area: 3 / 4 / 4 / 8;
+        margin-left: -7vw;
+    }
+}
+.dev-point-1 {
+    @media screen and (min-width: 320px) {
+        grid-area: 5 / 1 / 6 / 13;
+    }
+    @media screen and (min-width: 720px) {
+        // grid-area: 4 / 1 / 5 / 5;
+        grid-area: 4 / 4 / 5 / 8;
+    }
+}
+.dev-point-2 {
+    @media screen and (min-width: 320px) {
+        grid-area: 6 / 1 / 7 / 13;
+    }
+    @media screen and (min-width: 720px) {
+        // grid-area: 5 / 1 / 6 / 5;
+        grid-area: 5 / 4 / 6 / 8;
+    }
+}
+.dev-point-3 {
+    @media screen and (min-width: 320px) {
+        grid-area: 7 / 1 / 8 / 13;
+    }
+    @media screen and (min-width: 720px) {
+        // grid-area: 6 / 1 / 7 / 5;
+        grid-area: 6 / 4 / 7 / 8;
+    }
+}
+
+.dev-title{
+    .title-line{
+        // margin-left: -$margin;
+        margin-left: -80vw;
+        width: 200vw;
+    }
+}
+
+
+
+// .dev-point-1-icon { grid-area: 4 / 5 / 5 / 6; }
+// .dev-point-2-icon { grid-area: 5 / 5 / 6 / 6; }
+// .dev-point-3-icon { grid-area: 6 / 5 / 7 / 6; }
+// .dev-point-4-icon { grid-area: 7 / 5 / 8 / 6; }
+
+
+.dev-point-1-icon { grid-area: 4 / 3 / 5 / 4; }
+.dev-point-2-icon { grid-area: 5 / 3 / 6 / 4; }
+.dev-point-3-icon { grid-area: 6 / 3 / 7 / 4; }
+.dev-point-4-icon { grid-area: 7 / 3 / 8 / 4; }
+
+
+
+.fps{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    canvas {
+        filter: grayscale(1) contrast(1);
+    }
+
+    // canvas:first-child {
+    //     filter: grayscale(1) invert(1) contrast(1.5);
+    //     border:1px solid #ddd;
+    // }
+}
+
+
+
+
+
+
+
+
+.dev-point-2-wrap {
+    // position: relative;
+    display: flex;
+
+    justify-content: center;
+    align-content: center;
+    .screen{
+        transition: background-color 1s ease;
+        &:hover{
+            background-color: black;
+        }
+    }
+}
+.desktop {
+    width: 100%;
+    height: 60%;
+    border: 1px solid black;
+    animation: desktop 3s linear infinite;
+    margin:auto;
+}
+.desktop2 {
+    width: 100%;
+    height: 60%;
+    border: 1px solid black;
+    animation: desktop 5s 1s linear infinite;
+    animation-direction: alternate-reverse;
+    margin:auto;
+}
+.desktop3 {
+    width: 100%;
+    height: 60%;
+    border: 1px solid black;
+    animation: desktop 2s 1s linear infinite;
+    animation-direction: reverse;
+    margin:auto;
+}
+
+@keyframes desktop {
+    0%{
+        z-index: 10;
+    }
+    12%{
+        
+        z-index: 0;
+    }
+    25%{
+        // width: 56%;
+        // height:100%;
+        z-index: 10;
+    }
+    40%{
+        width: 56%;
+        height:100%;
+        transform: rotate(90deg);
+        z-index: 0;
+    }
+    75%{
+        width:100%;
+        height:56%;
+        z-index: 10;
+    }
+    90%{
+        z-index: 0;
+        transform: rotate(0deg);
+    }
+}
+
+.dev-point-3-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap:0.7rem;
+    
+
+    .line{
+        height: 5px;
+        background-color: #222;
+        border:1px solid #222;
+        transition: background-color 0.3s ease;
+        // animation: circle-bg-color 4s ease-in-out infinite;
+    }
+
+    .line1 {width:6rem; animation-delay: 1.66s; &:hover{background-color: black;}}
+    .line2 {width:4.5rem; animation-delay: 1s; background-color: #333; border-color: #333; &:hover{background-color: black;}}
+    .line3 {width:6rem; animation-delay: 0.44s; &:hover{background-color: black;}}
+    .line4 {width:4.5rem; animation-delay: 0s; background-color: #333; border-color: #333; &:hover{background-color: black;}}
+
+}

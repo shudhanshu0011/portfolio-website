@@ -1,0 +1,118 @@
+.section-container{
+    width: 100vw;
+    height: 100vh;
+    padding: $margin;
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+}
+
+.grid-container {
+
+    min-width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: $column-gutter;
+    grid-row-gap: $row-gutter;
+}
+
+
+.available {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.name {
+    z-index: 1000;
+    @media screen and (min-width: 320px) {
+        grid-area: 1 / 9 / 2 / 13;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    @media screen and (min-width: 720px) {
+        grid-area: 1 / 4 / 3 / 9;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+    mix-blend-mode: difference;
+
+
+    h1{
+        font-size:3vw;
+
+        font-family: 'Neue Haas Display Thin', sans-serif;
+        // font-display: fallback;
+        display:flex;
+        flex-direction: row;
+        height: min-content;
+        width: min-content;
+
+        span{
+            width: min-content;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+        .name-letter-0{transition: transform 1s ease-in-out}
+        .name-letter-17{transition: transform 1s ease-in-out}
+        .name-letter-11{transition: transform 1s ease-in-out}
+
+    }
+
+}
+
+// .name-hover-effect {
+//     &:hover{
+//         // .name-letter-0{transform: translateX(-50%);}
+//         .name-letter-9{transform: translateX(-750%);}
+//         .name-letter-4{transform: translateX(-150%);}
+//         .name-letter-2{opacity:0}
+//         .name-letter-3{opacity:0}
+//         .name-letter-5{opacity:0}
+//         .name-letter-6{opacity:0}
+//         .name-letter-7{opacity:0}
+//         .name-letter-8{opacity:0}
+//     }
+// }
+
+.services { 
+    @media screen and (min-width: 320px) {
+        grid-area: 1 / 1 / 3 / 13;
+        font-size: 2rem;
+    }
+    @media screen and (min-width: 720px) {
+        grid-area: 1 / 1 / 3 / 5;
+        font-size: 3rem;
+    }
+    
+    font-family: 'Neue Haas Display Roman';
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects {
+    @media screen and (min-width: 320px) {
+        grid-area: 4 / 1 / 9 / 13;
+        margin-left: -$margin;
+    }
+    @media screen and (min-width: 720px) {
+        grid-area: 1 / 5 / 9 / 13;
+        margin-left:0;
+    }
+    margin-right: -$margin;
+    margin-bottom: -$margin;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+}

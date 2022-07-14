@@ -1,0 +1,30 @@
+[
+  {
+    "title": "bikebros",
+    "date": "04.22",
+    "description": "Bike renting website developed with React framework. Under Construction.",
+    "categories":["Development", "Design", "React" ],
+    "images":["bikebros-min.png"],
+    "link":"https://bike--bros.web.app/",
+    "repo":"https://github.com/shudhanshu0011/bikebros"
+  },
+  {
+    "title": "guessr",
+    "date": "05.22",
+    "description": "Map based location guessing built with vanilla javascript.",
+    "categories":["Development", "Game" ],
+    "images":["guessr.png"],
+    "link":"https://guessr-game.web.app/",
+    "repo":"https://github.com/shudhanshu0011/guessr"
+  },
+
+  {
+    "title": "three.min.js",
+    "date": "01.22",
+    "description": "A simple webpage based on threejs using WebGL and JS.",
+    "categories":["Design", "WebGL" ],
+    "images":["threejs.png"],
+    "link":"https://vsunpharma.web.app/",
+    "repo":"https://github.com/shudhanshu0011/simplewebpage"
+  }
+]
